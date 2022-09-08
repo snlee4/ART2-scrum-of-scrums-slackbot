@@ -10,7 +10,7 @@ from common.team_names import teams
 
 def main():
     print("Beginning Scrum of Scrums")
-    channel_id = "C02HDTMC5JR"
+    channel_id = "C03M2ST52V6"
     slk.post_initial_message(channel_id)
     parent_message_ids = slk.post_parent_message(channel_id, teams)
     slk.threaded_messages(channel_id, parent_message_ids)

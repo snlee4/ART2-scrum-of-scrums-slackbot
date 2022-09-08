@@ -57,7 +57,7 @@ def post_parent_message(channel_id, teams):
 def threaded_messages(channel_id, list_of_slack_messages):
     client = WebClient(token=slack_token)
     for message_ts in list_of_slack_messages:
-        thread_messages = ['*Features*','*Dependencies*','*Program & Team Objectives*','*Risks*']
+        thread_messages = ['*Features*','*Dependencies*','*Program Objectives*']
         for text in thread_messages:
             response = client.chat_postMessage(
                 channel=channel_id,
